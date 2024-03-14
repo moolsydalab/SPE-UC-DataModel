@@ -1,0 +1,32 @@
+%Device
+%https://ngsi-ld-tutorials.readthedocs.io/en/latest/ngsi-ld-operations.html
+
+{
+      "id": "urn:ngsi-ld:TemperatureSensor:001",
+      "type": "Device",
+      "description" : {
+      	"type": "Property",
+      	"value": "Temperature Sensor Room A"
+      },
+      "category": {
+      	"type": "Property",
+      	"value": "sensor"
+      },
+      "controlledProperty" : {
+      	"type": "Property",
+      	"value": "temperature"
+      },
+      "temperature": {
+      	"type": "Property",
+      	"value": 20,
+      	"unitCode": "CEL"
+      }
+      "controlledAsset": {
+      	"type": "Relationship",
+      	"object": "urn:ngsi-ld:BuildingType:roomA"
+      }
+      "@context": [
+      	"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+      	"https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"  
+	  ]
+}

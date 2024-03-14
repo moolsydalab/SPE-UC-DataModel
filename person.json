@@ -1,0 +1,44 @@
+%Person
+%https://ngsi-ld-tutorials.readthedocs.io/en/latest/concise.html
+{
+    "@context": [
+        "https://fiware.github.io/tutorials.Step-by-Step/example.jsonld",
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.6.jsonld"
+    ],
+    "id": "urn:ngsi-ld:person:001",
+    "type": "Person",  
+    "name": {  
+    	"type": "Property",  
+    	"value": "John Doe"  
+  	},
+  	"username": {  
+    	"type": "Property",  
+    	"value": "johndoe"  
+  	},
+  	"location": {
+        "type": "Point",
+        "coordinates": [-50.000, 50.000]
+    },
+    "telephone": {  
+    	"type": "Property",  
+    	"value": "+010123456789"  
+  	},  
+  	"email": {  
+    	"type": "Property",  
+    	"value": "johndoe@domain.org"  
+  	},
+  	"address": {
+  		"type": "Property",
+  		"value": {
+  				"streetAddress": "St. Street 1A",
+  				"addressLocality": "City",
+  				"addressRegion": "Region",
+  				"addressCountry": "Country",
+  				"postalCode": "12345",
+  				"postOfficeBoxNumber": ""
+  		}
+  	},
+  	"@context": [
+  	"https://raw.githubusercontent.com/smart-data-models/dataModel.Organization/master/context.jsonld"  
+  ]  
+}  

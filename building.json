@@ -1,0 +1,35 @@
+%Building
+%https://ngsi-ld-tutorials.readthedocs.io/en/latest/understanding-%40context.html
+%https://github.com/smart-data-models/dataModel.Building/blob/master/Building/doc/spec.md
+%https://ngsi-ld-tutorials.readthedocs.io/en/latest/entity-relationships.html
+{
+    "id": "urn:ngsi-ld:Building:001",
+    "type": "Building",
+    "name": "New Gym Center",
+    "category": {  
+    	"type": "Property",  
+    	"value": [  
+      		"service"  
+    	]  
+  	}, 
+    "address": {  
+    	"type": "Property",  
+    	"value": {
+        	"streetAddress": "Gym Street",
+        	"addressLocality": "Gym City",
+        	"addressRegion": "Gym Region",
+        	"postalCode": "12345"
+        }
+    },
+    "buildingType": {  
+    	"type": "Property",  
+    	"value": "urn:ngsi-ld:BuildingType:gym001"
+  	},
+  	"location": {
+        "type": "Point",
+        "coordinates": [13.35, 52.5144]
+    },
+    "@context": [  
+    	"https://raw.githubusercontent.com/smart-data-models/dataModel.Building/master/context.jsonld"  
+  	]
+}

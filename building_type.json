@@ -1,0 +1,32 @@
+{
+	"id": "urn:ngsi-ld:BuildingType:gym001",
+	"type": "BuildingType",
+	"description": {
+  		"type": "Property",  
+    	"value": "Standard building type definition for a gym"
+    },
+	"name": {
+  		"type": "Property",  
+    	"value": "Gym"
+	},
+	"buildingTypeParent": {
+		"type": "Relationship",
+		"object": "urn:ngsi-ld:BuildingType:gym001"  
+    },
+    "root": {  
+        "type": "Property",  
+        "value": true  
+    },
+    "buildingTypeChildren": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:BuildingType:roomA",
+            "urn:ngsi-ld:BuildingType:roomB",
+            "urn:ngsi-ld:BuildingType:roomC" 
+        ]  
+    },
+    "@context": [
+    	"https://smart-data-models.github.io/dataModel.Building/context.jsonld",
+    	"https://raw.githubusercontent.com/smart-data-models/dataModel.Building/master/context.jsonld"  
+    ]  
+}

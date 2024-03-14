@@ -1,0 +1,32 @@
+%Personal Device
+%https://smart-data-models.github.io/dataModel.Device/Device/examples/example.json
+{
+      "id": "urn:ngsi-ld:PersonalDevice:001",
+      "type": "Device",
+      "description" : {
+      	"type": "Property",
+      	"value": "Temperature and heartbeat rate sensor"
+      },
+      "category": {
+      	"type": "Property",
+      	"value": "sensor"
+      },
+      "temperature": {
+      	"type": "Property",
+      	"value": 20,
+      	"unitCode": "CEL"
+      },
+      "heartRate": {
+      	"type": "Property",
+      	"value": 71,
+      	"unitCode": "5K"
+      },
+      "controlledAsset": {
+      	"type": "Relationship",
+      	"object": "urn:ngsi-ld:person:001"
+      },
+      "@context": [
+      	"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+      	"https://raw.githubusercontent.com/smart-data-models/dataModel.Device/master/context.jsonld"
+      ]  
+}
